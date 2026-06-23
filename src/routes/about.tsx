@@ -3,14 +3,14 @@ import { PageLayout } from "@/components/site-shell";
 import { stats } from "@/lib/mock-data";
 
 export const Route = createFileRoute("/about")({
-  head: () => ({ meta: [{ title: "About Sorted" }, { name: "description", content: "Sorted is building the trusted, location-precise local services infrastructure that's never existed." }] }),
+  head: () => ({ meta: [{ title: "About JaldiHelp" }, { name: "description", content: "JaldiHelp is building the trusted, location-precise local services infrastructure that's never existed." }] }),
   component: () => (
     <PageLayout>
       <section className="hero-grad border-b border-border">
         <div className="container-x py-20">
           <span className="pill chip-teal">Our story</span>
           <h1 className="mt-3 font-display text-5xl md:text-7xl max-w-4xl leading-[0.95]">Every household, everywhere, needs a local pro. We're building the trusted way to find one.</h1>
-          <p className="mt-6 text-lg text-muted-foreground max-w-2xl">Sorted is a location-first marketplace for local services — built first for Ireland, designed as configuration so it can launch in any country without rebuilding the platform.</p>
+          <p className="mt-6 text-lg text-muted-foreground max-w-2xl">JaldiHelp is a location-first marketplace for local services — built first for Ireland, designed as configuration so it can launch in any country without rebuilding the platform.</p>
         </div>
       </section>
 
@@ -22,7 +22,7 @@ export const Route = createFileRoute("/about")({
         </div>
         <div>
           <h2 className="font-display text-3xl">Why Ireland first</h2>
-          <p className="mt-3 text-muted-foreground">A compact, English-speaking, high-income market with the world's most precise postcode system. Once Sorted works in Ireland, it can roll into any country as configuration — taxonomy, currencies, languages and communities switched on per market.</p>
+          <p className="mt-3 text-muted-foreground">A compact, English-speaking, high-income market with the world's most precise postcode system. Once JaldiHelp works in Ireland, it can roll into any country as configuration — taxonomy, currencies, languages and communities switched on per market.</p>
         </div>
       </section>
 

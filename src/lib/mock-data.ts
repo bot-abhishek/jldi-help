@@ -1,4 +1,4 @@
-// Mock data for the Sorted marketplace prototype.
+// Mock data for the JaldiHelp marketplace prototype.
 
 export type Category = {
   slug: string;

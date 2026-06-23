@@ -12,7 +12,7 @@ export const Route = createFileRoute("/vendor/$id")({
   },
   head: ({ loaderData }) => ({
     meta: [
-      { title: `${loaderData?.vendor.name} — ${loaderData?.vendor.tagline} | Sorted` },
+      { title: `${loaderData?.vendor.name} — ${loaderData?.vendor.tagline} | JaldiHelp` },
       { name: "description", content: loaderData?.vendor.bio ?? "" },
     ],
   }),
@@ -142,7 +142,7 @@ function VendorPage() {
             <div className="mt-5 text-xs text-muted-foreground space-y-1.5">
               <div className="flex items-center gap-2"><ShieldCheck className="size-3.5 text-teal"/>Payment held in escrow until job is done</div>
               <div className="flex items-center gap-2"><CheckCircle2 className="size-3.5 text-success"/>Free cancellation up to 24h</div>
-              <div className="flex items-center gap-2"><Award className="size-3.5 text-amber"/>Backed by Sorted Guarantee</div>
+              <div className="flex items-center gap-2"><Award className="size-3.5 text-amber"/>Backed by JaldiHelp Guarantee</div>
             </div>
           </div>
         </aside>

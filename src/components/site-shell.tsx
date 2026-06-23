@@ -53,7 +53,7 @@ export function Footer() {
             <span className="font-display text-xl">sorted<span className="text-teal">.</span></span>
           </div>
           <p className="mt-3 text-sm text-muted-foreground max-w-sm">A location-first marketplace for every local service a household needs — built for Ireland, designed to travel.</p>
-          <p className="mt-6 text-xs text-muted-foreground">© 2026 Sorted Technologies Ltd · Dublin, Ireland</p>
+          <p className="mt-6 text-xs text-muted-foreground">© 2026 JaldiHelp Technologies Ltd · Dublin, Ireland</p>
         </div>
         <div>
           <h4 className="font-semibold text-sm mb-3">Explore</h4>

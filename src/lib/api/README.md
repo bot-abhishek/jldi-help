@@ -1,4 +1,4 @@
-# Sorted — API Layer
+# JaldiHelp — API Layer
 
 All UI talks to `src/lib/api`. Today the methods return mock data; flip
 `USE_MOCKS = false` in `client.ts` (or set `VITE_API_BASE_URL`) to hit a real

@@ -4,7 +4,7 @@ import { howItWorks } from "@/lib/mock-data";
 import { ShieldCheck, MapPin, MessageCircle, Star, Lock, ArrowRight } from "lucide-react";
 
 export const Route = createFileRoute("/how-it-works")({
-  head: () => ({ meta: [{ title: "How Sorted works" }, { name: "description", content: "Four steps from 'I need someone' to 'it's done.'" }] }),
+  head: () => ({ meta: [{ title: "How JaldiHelp works" }, { name: "description", content: "Four steps from 'I need someone' to 'it's done.'" }] }),
   component: () => (
     <PageLayout>
       <section className="hero-grad border-b border-border">
@@ -25,7 +25,7 @@ export const Route = createFileRoute("/how-it-works")({
       </div>
 
       <section className="container-x py-16">
-        <h2 className="font-display text-4xl mb-8">Why people trust Sorted</h2>
+        <h2 className="font-display text-4xl mb-8">Why people trust JaldiHelp</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
           {[
             { i: <ShieldCheck className="size-6"/>, t: "Three tiers of verification", b: "Background check, credential check, or ID — every vendor has a tier badge before they can list." },

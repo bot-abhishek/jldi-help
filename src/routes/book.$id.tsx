@@ -11,7 +11,7 @@ export const Route = createFileRoute("/book/$id")({
     if (!v) throw notFound();
     return { vendor: v };
   },
-  head: () => ({ meta: [{ title: "Confirm your booking — Sorted" }] }),
+  head: () => ({ meta: [{ title: "Confirm your booking — JaldiHelp" }] }),
   component: BookPage,
 });
 
@@ -81,7 +81,7 @@ function BookPage() {
               </button>
               <button onClick={()=>setPay("cash")} className={"card-soft p-4 text-left " + (pay==="cash"?"ring-2 ring-teal":"")}>
                 <div className="font-semibold text-sm">Pay cash on site</div>
-                <div className="text-xs text-muted-foreground mt-1">Not protected by Sorted Guarantee</div>
+                <div className="text-xs text-muted-foreground mt-1">Not protected by JaldiHelp Guarantee</div>
               </button>
             </div>
             {pay==="card" && (
@@ -115,7 +115,7 @@ function BookPage() {
             </div>
             <div className="py-4 border-t border-border space-y-2 text-sm">
               <Row k="Service" v={`€${subtotal}`} />
-              <Row k="Sorted fee (4%)" v={`€${fee}`} />
+              <Row k="JaldiHelp fee (4%)" v={`€${fee}`} />
               <div className="flex justify-between pt-2 border-t border-border font-display text-xl">
                 <span>Total</span><span className="num-pill">€{total}</span>
               </div>

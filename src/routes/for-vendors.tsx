@@ -3,7 +3,7 @@ import { PageLayout } from "@/components/site-shell";
 import { ArrowRight, Check, TrendingUp, ShieldCheck, Calendar, CreditCard, Star, Zap } from "lucide-react";
 
 export const Route = createFileRoute("/for-vendors")({
-  head: () => ({ meta: [{ title: "List your service on Sorted" }, { name: "description", content: "Get found by every customer near you. Free to list, 18% commission only on completed jobs." }] }),
+  head: () => ({ meta: [{ title: "List your service on JaldiHelp" }, { name: "description", content: "Get found by every customer near you. Free to list, 18% commission only on completed jobs." }] }),
   component: () => (
     <PageLayout>
       <section className="border-b border-border" style={{background:"linear-gradient(135deg, var(--amber-soft), var(--teal-soft) 80%)"}}>
@@ -63,7 +63,7 @@ export const Route = createFileRoute("/for-vendors")({
         <div className="grid md:grid-cols-3 gap-5">
           {[
             { tier:"Free to list", price:"€0", sub:"No monthly fee", lines:["List unlimited services","Profile + reviews","Customer messaging","Up to 5 active bookings/mo"], cta:"Start free" },
-            { tier:"Pay-as-you-go", price:"18%", sub:"per completed booking", lines:["Everything in Free","Unlimited bookings","Escrow payments","Sorted Guarantee for customers","Featured placement boosts"], cta:"Get started", featured:true },
+            { tier:"Pay-as-you-go", price:"18%", sub:"per completed booking", lines:["Everything in Free","Unlimited bookings","Escrow payments","JaldiHelp Guarantee for customers","Featured placement boosts"], cta:"Get started", featured:true },
             { tier:"Pro", price:"€29 /mo", sub:"+ reduced 12% commission", lines:["Everything in PAYG","Lower 12% commission","Priority support","Analytics dashboard","Custom vendor URL"], cta:"Upgrade later" },
           ].map(p => (
             <div key={p.tier} className={"card-soft p-7 flex flex-col " + (p.featured ? "ring-2 ring-teal" : "")}>

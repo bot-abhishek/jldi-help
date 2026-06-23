@@ -3,7 +3,7 @@ import { PageLayout } from "@/components/site-shell";
 import { communities } from "@/lib/mock-data";
 
 export const Route = createFileRoute("/communities")({
-  head: () => ({ meta: [{ title: "Communities — Sorted" }, { name: "description", content: "Browse services by community across every category." }] }),
+  head: () => ({ meta: [{ title: "Communities — JaldiHelp" }, { name: "description", content: "Browse services by community across every category." }] }),
   component: () => (
     <PageLayout>
       <section className="hero-grad border-b border-border">
