@@ -23,7 +23,7 @@ function BookPage() {
   const [slot, setSlot] = useState(slots[0]);
   const [pay, setPay] = useState<"card"|"cash">("card");
 
-  const svc = v.services.find(s => s.name === service) ?? v.services[0];
+  const svc = v.services.find((s: typeof v.services[number]) => s.name === service) ?? v.services[0];
   const subtotal = svc?.price ?? 0;
   const fee = Math.round(subtotal * 0.04);
   const total = subtotal + fee;
