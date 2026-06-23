@@ -1,0 +1,15 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/category/[slug]/page": "/category/[slug]",
+  "/community/[slug]/page": "/community/[slug]",
+  "/about/page": "/about",
+  "/vendor/[id]/page": "/vendor/[id]",
+  "/auth/page": "/auth",
+  "/communities/page": "/communities",
+  "/browse/page": "/browse",
+  "/book/[id]/page": "/book/[id]",
+  "/how-it-works/page": "/how-it-works",
+  "/for-vendors/page": "/for-vendors",
+  "/page": "/",
+  "/vendor-dashboard/page": "/vendor-dashboard"
+}

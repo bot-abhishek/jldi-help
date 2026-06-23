@@ -1,0 +1,15 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/category/[slug]/page": "app/category/[slug]/page.js",
+  "/community/[slug]/page": "app/community/[slug]/page.js",
+  "/about/page": "app/about/page.js",
+  "/vendor/[id]/page": "app/vendor/[id]/page.js",
+  "/auth/page": "app/auth/page.js",
+  "/communities/page": "app/communities/page.js",
+  "/browse/page": "app/browse/page.js",
+  "/book/[id]/page": "app/book/[id]/page.js",
+  "/how-it-works/page": "app/how-it-works/page.js",
+  "/for-vendors/page": "app/for-vendors/page.js",
+  "/page": "app/page.js",
+  "/vendor-dashboard/page": "app/vendor-dashboard/page.js"
+}
