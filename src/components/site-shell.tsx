@@ -10,7 +10,7 @@ export function Header() {
       <div className="container-x flex items-center gap-6 h-16">
         <Link to="/" className="flex items-center gap-2 group">
           <span className="inline-grid place-items-center size-9 rounded-xl bg-ink text-cream font-display text-lg leading-none">s.</span>
-          <span className="font-display text-xl tracking-tight">sorted<span className="text-teal">.</span></span>
+          <span className="font-display text-xl tracking-tight">jaldihelp<span className="text-teal">.</span></span>
         </Link>
 
         <div className="hidden md:flex items-center gap-1 text-sm font-medium ml-2">
@@ -50,7 +50,7 @@ export function Footer() {
       <div className="container-x py-14 grid md:grid-cols-5 gap-10">
         <div className="md:col-span-2">
           <div className="flex items-center gap-2"><span className="inline-grid place-items-center size-9 rounded-xl bg-ink text-cream font-display text-lg leading-none">s.</span>
-            <span className="font-display text-xl">sorted<span className="text-teal">.</span></span>
+            <span className="font-display text-xl">jaldihelp<span className="text-teal">.</span></span>
           </div>
           <p className="mt-3 text-sm text-muted-foreground max-w-sm">A location-first marketplace for every local service a household needs — built for Ireland, designed to travel.</p>
           <p className="mt-6 text-xs text-muted-foreground">© 2026 JaldiHelp Technologies Ltd · Dublin, Ireland</p>
