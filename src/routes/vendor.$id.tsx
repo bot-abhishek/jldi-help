@@ -45,7 +45,7 @@ function VendorPage() {
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2 flex-wrap mb-1">
                   <span className="pill chip-teal"><ShieldCheck className="size-3"/>{v.verified.replace("_"," ").toLowerCase()}</span>
-                  {v.badges.map(b => <span key={b} className="pill chip-outline">{b}</span>)}
+                  {v.badges.map((b: string) => <span key={b} className="pill chip-outline">{b}</span>)}
                 </div>
                 <h1 className="font-display text-4xl md:text-5xl leading-tight">{v.name}</h1>
                 <p className="text-muted-foreground mt-1">{v.tagline}</p>
@@ -73,7 +73,7 @@ function VendorPage() {
           {/* SERVICES */}
           <Section title="Services & pricing">
             <div className="space-y-3">
-              {v.services.map(s => (
+              {v.services.map((s: typeof v.services[number]) => (
                 <div key={s.name} className="card-soft p-4 flex items-center justify-between gap-4">
                   <div>
                     <div className="font-semibold">{s.name}</div>

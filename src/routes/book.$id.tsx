@@ -41,7 +41,7 @@ function BookPage() {
           {/* Service */}
           <Step n={1} title="Choose a service">
             <div className="grid sm:grid-cols-2 gap-3">
-              {v.services.map(s => (
+              {v.services.map((s: typeof v.services[number]) => (
                 <button key={s.name} onClick={()=>setService(s.name)} className={"card-soft p-4 text-left transition " + (service===s.name?"ring-2 ring-teal":"hover:bg-secondary")}>
                   <div className="font-semibold text-sm">{s.name}</div>
                   <div className="text-xs text-muted-foreground">Approx. {s.duration}</div>

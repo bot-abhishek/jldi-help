@@ -44,7 +44,7 @@ function CategoryPage() {
           </div>
 
           <div className="mt-8 flex gap-2 flex-wrap">
-            {cat.subcategories.map(s => (
+            {cat.subcategories.map((s: typeof cat.subcategories[number]) => (
               <span key={s.slug} className="pill chip-outline bg-card">{s.name}</span>
             ))}
           </div>

@@ -9,38 +9,234 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as VendorDashboardRouteImport } from './routes/vendor-dashboard'
+import { Route as HowItWorksRouteImport } from './routes/how-it-works'
+import { Route as ForVendorsRouteImport } from './routes/for-vendors'
+import { Route as CommunitiesRouteImport } from './routes/communities'
+import { Route as BrowseRouteImport } from './routes/browse'
+import { Route as AuthRouteImport } from './routes/auth'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as VendorIdRouteImport } from './routes/vendor.$id'
+import { Route as CommunitySlugRouteImport } from './routes/community.$slug'
+import { Route as CategorySlugRouteImport } from './routes/category.$slug'
+import { Route as BookIdRouteImport } from './routes/book.$id'
 
+const VendorDashboardRoute = VendorDashboardRouteImport.update({
+  id: '/vendor-dashboard',
+  path: '/vendor-dashboard',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HowItWorksRoute = HowItWorksRouteImport.update({
+  id: '/how-it-works',
+  path: '/how-it-works',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ForVendorsRoute = ForVendorsRouteImport.update({
+  id: '/for-vendors',
+  path: '/for-vendors',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CommunitiesRoute = CommunitiesRouteImport.update({
+  id: '/communities',
+  path: '/communities',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BrowseRoute = BrowseRouteImport.update({
+  id: '/browse',
+  path: '/browse',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AuthRoute = AuthRouteImport.update({
+  id: '/auth',
+  path: '/auth',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const VendorIdRoute = VendorIdRouteImport.update({
+  id: '/vendor/$id',
+  path: '/vendor/$id',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CommunitySlugRoute = CommunitySlugRouteImport.update({
+  id: '/community/$slug',
+  path: '/community/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CategorySlugRoute = CategorySlugRouteImport.update({
+  id: '/category/$slug',
+  path: '/category/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BookIdRoute = BookIdRouteImport.update({
+  id: '/book/$id',
+  path: '/book/$id',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/auth': typeof AuthRoute
+  '/browse': typeof BrowseRoute
+  '/communities': typeof CommunitiesRoute
+  '/for-vendors': typeof ForVendorsRoute
+  '/how-it-works': typeof HowItWorksRoute
+  '/vendor-dashboard': typeof VendorDashboardRoute
+  '/book/$id': typeof BookIdRoute
+  '/category/$slug': typeof CategorySlugRoute
+  '/community/$slug': typeof CommunitySlugRoute
+  '/vendor/$id': typeof VendorIdRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/auth': typeof AuthRoute
+  '/browse': typeof BrowseRoute
+  '/communities': typeof CommunitiesRoute
+  '/for-vendors': typeof ForVendorsRoute
+  '/how-it-works': typeof HowItWorksRoute
+  '/vendor-dashboard': typeof VendorDashboardRoute
+  '/book/$id': typeof BookIdRoute
+  '/category/$slug': typeof CategorySlugRoute
+  '/community/$slug': typeof CommunitySlugRoute
+  '/vendor/$id': typeof VendorIdRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/auth': typeof AuthRoute
+  '/browse': typeof BrowseRoute
+  '/communities': typeof CommunitiesRoute
+  '/for-vendors': typeof ForVendorsRoute
+  '/how-it-works': typeof HowItWorksRoute
+  '/vendor-dashboard': typeof VendorDashboardRoute
+  '/book/$id': typeof BookIdRoute
+  '/category/$slug': typeof CategorySlugRoute
+  '/community/$slug': typeof CommunitySlugRoute
+  '/vendor/$id': typeof VendorIdRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/auth'
+    | '/browse'
+    | '/communities'
+    | '/for-vendors'
+    | '/how-it-works'
+    | '/vendor-dashboard'
+    | '/book/$id'
+    | '/category/$slug'
+    | '/community/$slug'
+    | '/vendor/$id'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/auth'
+    | '/browse'
+    | '/communities'
+    | '/for-vendors'
+    | '/how-it-works'
+    | '/vendor-dashboard'
+    | '/book/$id'
+    | '/category/$slug'
+    | '/community/$slug'
+    | '/vendor/$id'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/auth'
+    | '/browse'
+    | '/communities'
+    | '/for-vendors'
+    | '/how-it-works'
+    | '/vendor-dashboard'
+    | '/book/$id'
+    | '/category/$slug'
+    | '/community/$slug'
+    | '/vendor/$id'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  AuthRoute: typeof AuthRoute
+  BrowseRoute: typeof BrowseRoute
+  CommunitiesRoute: typeof CommunitiesRoute
+  ForVendorsRoute: typeof ForVendorsRoute
+  HowItWorksRoute: typeof HowItWorksRoute
+  VendorDashboardRoute: typeof VendorDashboardRoute
+  BookIdRoute: typeof BookIdRoute
+  CategorySlugRoute: typeof CategorySlugRoute
+  CommunitySlugRoute: typeof CommunitySlugRoute
+  VendorIdRoute: typeof VendorIdRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/vendor-dashboard': {
+      id: '/vendor-dashboard'
+      path: '/vendor-dashboard'
+      fullPath: '/vendor-dashboard'
+      preLoaderRoute: typeof VendorDashboardRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/how-it-works': {
+      id: '/how-it-works'
+      path: '/how-it-works'
+      fullPath: '/how-it-works'
+      preLoaderRoute: typeof HowItWorksRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/for-vendors': {
+      id: '/for-vendors'
+      path: '/for-vendors'
+      fullPath: '/for-vendors'
+      preLoaderRoute: typeof ForVendorsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/communities': {
+      id: '/communities'
+      path: '/communities'
+      fullPath: '/communities'
+      preLoaderRoute: typeof CommunitiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/browse': {
+      id: '/browse'
+      path: '/browse'
+      fullPath: '/browse'
+      preLoaderRoute: typeof BrowseRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/auth': {
+      id: '/auth'
+      path: '/auth'
+      fullPath: '/auth'
+      preLoaderRoute: typeof AuthRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -48,11 +244,50 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/vendor/$id': {
+      id: '/vendor/$id'
+      path: '/vendor/$id'
+      fullPath: '/vendor/$id'
+      preLoaderRoute: typeof VendorIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/community/$slug': {
+      id: '/community/$slug'
+      path: '/community/$slug'
+      fullPath: '/community/$slug'
+      preLoaderRoute: typeof CommunitySlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/category/$slug': {
+      id: '/category/$slug'
+      path: '/category/$slug'
+      fullPath: '/category/$slug'
+      preLoaderRoute: typeof CategorySlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/book/$id': {
+      id: '/book/$id'
+      path: '/book/$id'
+      fullPath: '/book/$id'
+      preLoaderRoute: typeof BookIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  AuthRoute: AuthRoute,
+  BrowseRoute: BrowseRoute,
+  CommunitiesRoute: CommunitiesRoute,
+  ForVendorsRoute: ForVendorsRoute,
+  HowItWorksRoute: HowItWorksRoute,
+  VendorDashboardRoute: VendorDashboardRoute,
+  BookIdRoute: BookIdRoute,
+  CategorySlugRoute: CategorySlugRoute,
+  CommunitySlugRoute: CommunitySlugRoute,
+  VendorIdRoute: VendorIdRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
