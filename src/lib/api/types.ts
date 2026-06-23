@@ -1,7 +1,6 @@
 // Shared DTOs — keep aligned with FastAPI Pydantic schemas.
-export type {
-  Vendor, Category, Community,
-} from "@/lib/mock-data";
+// These types are the single source of truth between the frontend and backend.
+export type { Vendor, Category, Community } from "@/lib/mock-data";
 
 export type BookingRequest = {
   vendorId: string;
@@ -19,3 +18,11 @@ export type Booking = BookingRequest & {
 };
 
 export type MagicLinkRequest = { email?: string; phone?: string };
+export type MagicLinkResponse = { ok: true };
+
+export type VendorQuery = {
+  category?: string;
+  community?: string;
+  q?: string;
+  near?: string;
+};

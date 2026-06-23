@@ -153,7 +153,9 @@ export const vendors: Vendor[] = [
     [{name:"Wedding catering (per head)",price:38,unit:"/head",duration:"event"},{name:"Dosa live station",price:280,unit:"flat",duration:"3 hr"},{name:"Thali platter (10pp)",price:250,unit:"flat",duration:"prep"}]),
 ];
 
-export const stats = {
+export type Stats = { vendors: string; cities: number; bookings: string; categories: number };
+
+export const stats: Stats = {
   vendors: "4,200+",
   cities: 28,
   bookings: "120k+",

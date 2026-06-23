@@ -1,67 +1,20 @@
-// Public API surface. Components should ONLY import from here, never from
-// the underlying mock-data file. That way swapping to FastAPI is a one-line
-// change in client.ts (USE_MOCKS = false).
-import { http, isMockMode } from "./client";
-import * as mock from "@/lib/mock-data";
-import type { Booking, BookingRequest, MagicLinkRequest } from "./types";
-import type { Vendor, Category, Community } from "@/lib/mock-data";
+// Public API surface — components import only from here, never from individual
+// service files directly. Swapping to FastAPI is a one-line change in client.ts.
 
-// ----- Categories ------------------------------------------------------------
-export const categoriesApi = {
-  list: async (): Promise<Category[]> =>
-    isMockMode() ? mock.categories : http("/categories"),
-  get: async (slug: string): Promise<Category | undefined> =>
-    isMockMode() ? mock.findCategory(slug) : http(`/categories/${slug}`),
-};
+export { categoriesApi } from "./services/categories";
+export { communitiesApi } from "./services/communities";
+export { vendorsApi } from "./services/vendors";
+export { bookingsApi } from "./services/bookings";
+export { authApi } from "./services/auth";
 
-// ----- Communities -----------------------------------------------------------
-export const communitiesApi = {
-  list: async (): Promise<Community[]> =>
-    isMockMode() ? mock.communities : http("/communities"),
-  get: async (slug: string): Promise<Community | undefined> =>
-    isMockMode() ? mock.findCommunity(slug) : http(`/communities/${slug}`),
-};
+export type { Vendor, Category, Community, BookingRequest, Booking, MagicLinkRequest, VendorQuery } from "./types";
 
-// ----- Vendors ---------------------------------------------------------------
-export type VendorQuery = { category?: string; community?: string; q?: string; near?: string };
-export const vendorsApi = {
-  list: async (query: VendorQuery = {}): Promise<Vendor[]> => {
-    if (isMockMode()) {
-      return mock.vendors.filter(v =>
-        (!query.category || v.category === query.category) &&
-        (!query.community || v.communities.includes(query.community))
-      );
-    }
-    const qs = new URLSearchParams(query as Record<string, string>).toString();
-    return http(`/vendors${qs ? `?${qs}` : ""}`);
-  },
-  get: async (id: string): Promise<Vendor | undefined> =>
-    isMockMode() ? mock.findVendor(id) : http(`/vendors/${id}`),
-};
-
-// ----- Bookings --------------------------------------------------------------
-export const bookingsApi = {
-  create: async (req: BookingRequest): Promise<Booking> => {
-    if (isMockMode()) {
-      return {
-        ...req,
-        id: `bk-${Math.floor(performance.now())}`,
-        status: "pending",
-        total: 100,
-        createdAt: new Date().toISOString(),
-      };
-    }
-    return http("/bookings", { method: "POST", body: JSON.stringify(req) });
-  },
-  get: async (id: string): Promise<Booking> =>
-    isMockMode() ? Promise.reject(new Error("mock")) : http(`/bookings/${id}`),
-};
-
-// ----- Auth ------------------------------------------------------------------
-export const authApi = {
-  sendMagicLink: async (req: MagicLinkRequest): Promise<{ ok: true }> =>
-    isMockMode() ? { ok: true } : http("/auth/magic-link", { method: "POST", body: JSON.stringify(req) }),
-};
+// Convenience aggregate — use when you need multiple services in one import
+import { categoriesApi } from "./services/categories";
+import { communitiesApi } from "./services/communities";
+import { vendorsApi } from "./services/vendors";
+import { bookingsApi } from "./services/bookings";
+import { authApi } from "./services/auth";
 
 export const api = {
   categories: categoriesApi,
