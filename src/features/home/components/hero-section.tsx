@@ -16,7 +16,8 @@ export function HeroSection() {
       <div className="container-x pt-16 pb-20 md:pt-24 md:pb-28 grid lg:grid-cols-12 gap-10 items-center">
         <div className="lg:col-span-7">
           <span className="pill chip-amber">
-            <Sparkles className="size-3" />Now live across Ireland · 28 cities
+            <Sparkles className="size-3" />
+            Now live across Ireland · 28 cities
           </span>
           <h1 className="mt-5 font-display text-5xl md:text-7xl leading-[0.95] tracking-tight">
             Whatever you need <span className="underline-grow">sorted</span>,<br />
@@ -77,10 +78,14 @@ export function HeroSection() {
               </div>
             </div>
             <div className="mt-3 flex items-center gap-2 text-xs">
-              <Star className="size-3 fill-amber text-amber" /><b>4.9</b> · 182 jobs · €32/hr
+              <Star className="size-3 fill-amber text-amber" />
+              <b>4.9</b> · 182 jobs · €32/hr
             </div>
             <div className="mt-2 flex gap-1.5">
-              <span className="pill chip-teal"><ShieldCheck className="size-3" />Background-checked</span>
+              <span className="pill chip-teal">
+                <ShieldCheck className="size-3" />
+                Background-checked
+              </span>
             </div>
           </div>
 
@@ -98,7 +103,8 @@ export function HeroSection() {
               </div>
             </div>
             <div className="mt-3 flex items-center gap-2 text-xs">
-              <Star className="size-3 fill-amber text-amber" /><b>5.0</b> · Telugu, Hindi, Sanskrit
+              <Star className="size-3 fill-amber text-amber" />
+              <b>5.0</b> · Telugu, Hindi, Sanskrit
             </div>
             <div className="mt-2 flex gap-1.5">
               <span className="pill chip-amber">Available this Saturday</span>
@@ -119,10 +125,14 @@ export function HeroSection() {
               </div>
             </div>
             <div className="mt-3 flex items-center gap-2 text-xs">
-              <Clock className="size-3" />Replies in ~8 min · 241 jobs
+              <Clock className="size-3" />
+              Replies in ~8 min · 241 jobs
             </div>
             <div className="mt-2 flex gap-1.5">
-              <span className="pill chip-teal"><Zap className="size-3" />Available now</span>
+              <span className="pill chip-teal">
+                <Zap className="size-3" />
+                Available now
+              </span>
             </div>
           </div>
         </div>

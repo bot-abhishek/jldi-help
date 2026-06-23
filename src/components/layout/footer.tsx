@@ -9,38 +9,61 @@ export function Footer() {
             <span className="inline-grid place-items-center size-9 rounded-xl bg-ink text-cream font-display text-sm font-bold leading-none tracking-tight">
               JH
             </span>
-            <span className="font-display text-xl">jaldihelp<span className="text-teal">.</span></span>
+            <span className="font-display text-xl">
+              jaldihelp<span className="text-teal">.</span>
+            </span>
           </div>
           <p className="mt-3 text-sm text-muted-foreground max-w-sm">
-            A location-first marketplace for every local service a household needs — built for Ireland, designed to travel.
+            A location-first marketplace for every local service a household needs — built for
+            Ireland, designed to travel.
           </p>
-          <p className="mt-6 text-xs text-muted-foreground">© 2026 JaldiHelp Technologies Ltd · Dublin, Ireland</p>
+          <p className="mt-6 text-xs text-muted-foreground">
+            © 2026 JaldiHelp Technologies Ltd · Dublin, Ireland
+          </p>
         </div>
 
         <div>
           <h4 className="font-semibold text-sm mb-3">Explore</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><Link href="/browse">All categories</Link></li>
-            <li><Link href="/communities">Communities</Link></li>
-            <li><Link href="/how-it-works">How it works</Link></li>
+            <li>
+              <Link href="/browse">All categories</Link>
+            </li>
+            <li>
+              <Link href="/communities">Communities</Link>
+            </li>
+            <li>
+              <Link href="/how-it-works">How it works</Link>
+            </li>
           </ul>
         </div>
 
         <div>
           <h4 className="font-semibold text-sm mb-3">For Vendors</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><Link href="/for-vendors">List your service</Link></li>
-            <li><Link href="/vendor-dashboard">Vendor dashboard</Link></li>
-            <li><Link href="/for-vendors">Trust &amp; verification</Link></li>
+            <li>
+              <Link href="/for-vendors">List your service</Link>
+            </li>
+            <li>
+              <Link href="/vendor-dashboard">Vendor dashboard</Link>
+            </li>
+            <li>
+              <Link href="/for-vendors">Trust &amp; verification</Link>
+            </li>
           </ul>
         </div>
 
         <div>
           <h4 className="font-semibold text-sm mb-3">Company</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><Link href="/about">About</Link></li>
-            <li><Link href="/about">Investors</Link></li>
-            <li><Link href="/about">Press</Link></li>
+            <li>
+              <Link href="/about">About</Link>
+            </li>
+            <li>
+              <Link href="/about">Investors</Link>
+            </li>
+            <li>
+              <Link href="/about">Press</Link>
+            </li>
           </ul>
         </div>
       </div>

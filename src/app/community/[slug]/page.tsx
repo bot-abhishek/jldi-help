@@ -28,9 +28,10 @@ export default async function CommunityPage({ params }: Props) {
 
   // Vendors tagged with this community, with fillers if < 3
   const tagged = vendors.filter((v) => v.communities.includes(slug));
-  const list = tagged.length >= 3
-    ? tagged
-    : [...tagged, ...vendors.filter((v) => !tagged.includes(v)).slice(0, 6 - tagged.length)];
+  const list =
+    tagged.length >= 3
+      ? tagged
+      : [...tagged, ...vendors.filter((v) => !tagged.includes(v)).slice(0, 6 - tagged.length)];
 
   const otherCommunities = communities.filter((c) => c.slug !== slug);
 

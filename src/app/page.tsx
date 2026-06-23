@@ -7,7 +7,8 @@ import { categories, communities, vendors, stats, testimonials, howItWorks } fro
 
 export const metadata: Metadata = {
   title: "JaldiHelp — Local services in Ireland, sorted in minutes",
-  description: "From a leaking tap to a wedding priest — find a verified local pro nearby and book in under a minute.",
+  description:
+    "From a leaking tap to a wedding priest — find a verified local pro nearby and book in under a minute.",
 };
 
 export default function HomePage() {

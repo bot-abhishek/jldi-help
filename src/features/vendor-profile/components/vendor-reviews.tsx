@@ -2,10 +2,30 @@ import { Star, Award } from "lucide-react";
 import type { Vendor } from "@/lib/mock-data";
 
 const SAMPLE_REVIEWS = [
-  { name: "Saoirse M.", date: "Mar 2026", rating: 5, body: "Absolutely brilliant. Booked late Sunday, here Monday 9am sharp. Place was sparkling." },
-  { name: "Diarmuid O.", date: "Feb 2026", rating: 5, body: "Communicated really clearly, fair price, no hidden extras. Will book again." },
-  { name: "Kamila W.", date: "Feb 2026", rating: 4, body: "Lovely service, only knocked a star for arriving 15 min late — traffic to be fair." },
-  { name: "Adaeze N.", date: "Jan 2026", rating: 5, body: "Honestly the best in Dublin. Cannot recommend highly enough." },
+  {
+    name: "Saoirse M.",
+    date: "Mar 2026",
+    rating: 5,
+    body: "Absolutely brilliant. Booked late Sunday, here Monday 9am sharp. Place was sparkling.",
+  },
+  {
+    name: "Diarmuid O.",
+    date: "Feb 2026",
+    rating: 5,
+    body: "Communicated really clearly, fair price, no hidden extras. Will book again.",
+  },
+  {
+    name: "Kamila W.",
+    date: "Feb 2026",
+    rating: 4,
+    body: "Lovely service, only knocked a star for arriving 15 min late — traffic to be fair.",
+  },
+  {
+    name: "Adaeze N.",
+    date: "Jan 2026",
+    rating: 5,
+    body: "Honestly the best in Dublin. Cannot recommend highly enough.",
+  },
 ];
 
 export function VendorReviews({ vendor }: { vendor: Pick<Vendor, "rating" | "reviewCount"> }) {
@@ -20,11 +40,16 @@ export function VendorReviews({ vendor }: { vendor: Pick<Vendor, "rating" | "rev
             {Array.from({ length: 5 }).map((_, i) => (
               <Star
                 key={i}
-                className={"size-4 " + (i < Math.round(vendor.rating) ? "fill-amber text-amber" : "text-border")}
+                className={
+                  "size-4 " +
+                  (i < Math.round(vendor.rating) ? "fill-amber text-amber" : "text-border")
+                }
               />
             ))}
           </div>
-          <div className="text-xs text-muted-foreground">Based on {vendor.reviewCount} verified bookings</div>
+          <div className="text-xs text-muted-foreground">
+            Based on {vendor.reviewCount} verified bookings
+          </div>
         </div>
         <Award className="size-10 text-amber hidden sm:block" />
       </div>

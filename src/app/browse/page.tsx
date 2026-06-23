@@ -6,7 +6,8 @@ import { categories, vendors, communities } from "@/lib/mock-data";
 
 export const metadata: Metadata = {
   title: "Browse local services — JaldiHelp",
-  description: "Filter trusted local vendors by category, availability, price, language and community.",
+  description:
+    "Filter trusted local vendors by category, availability, price, language and community.",
 };
 
 export default function BrowsePage() {

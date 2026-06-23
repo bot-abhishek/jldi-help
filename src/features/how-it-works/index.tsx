@@ -2,10 +2,26 @@ import Link from "next/link";
 import { ShieldCheck, Lock, Star, MapPin, ArrowRight } from "lucide-react";
 
 const TRUST_PILLARS = [
-  { i: <ShieldCheck className="size-6" />, t: "Three tiers of verification", b: "Background check, credential check, or ID — every vendor has a tier badge before they can list." },
-  { i: <Lock className="size-6" />, t: "Escrow payments", b: "We hold your money until the job is done. No upfront risk." },
-  { i: <Star className="size-6" />, t: "Only verified reviews", b: "Reviews are only possible after a completed booking. No fake stars." },
-  { i: <MapPin className="size-6" />, t: "Location-precise results", b: "Every search is anchored to your GPS or Eircode. Distance is honest." },
+  {
+    i: <ShieldCheck className="size-6" />,
+    t: "Three tiers of verification",
+    b: "Background check, credential check, or ID — every vendor has a tier badge before they can list.",
+  },
+  {
+    i: <Lock className="size-6" />,
+    t: "Escrow payments",
+    b: "We hold your money until the job is done. No upfront risk.",
+  },
+  {
+    i: <Star className="size-6" />,
+    t: "Only verified reviews",
+    b: "Reviews are only possible after a completed booking. No fake stars.",
+  },
+  {
+    i: <MapPin className="size-6" />,
+    t: "Location-precise results",
+    b: "Every search is anchored to your GPS or Eircode. Distance is honest.",
+  },
 ];
 
 type Step = { n: number; title: string; body: string };
@@ -37,7 +53,9 @@ export function HowItWorksView({ steps }: { steps: Step[] }) {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
           {TRUST_PILLARS.map((x) => (
             <div key={x.t} className="card-soft p-6">
-              <div className="size-12 rounded-xl bg-teal-soft text-teal grid place-items-center">{x.i}</div>
+              <div className="size-12 rounded-xl bg-teal-soft text-teal grid place-items-center">
+                {x.i}
+              </div>
               <div className="font-semibold mt-3">{x.t}</div>
               <p className="text-sm text-muted-foreground mt-1">{x.b}</p>
             </div>

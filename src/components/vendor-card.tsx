@@ -2,7 +2,15 @@ import Link from "next/link";
 import { Star, MapPin, Clock, ShieldCheck, MessageCircle } from "lucide-react";
 import type { Vendor } from "@/lib/mock-data";
 
-export function Avatar({ initials, color, size = 56 }: { initials: string; color: string; size?: number }) {
+export function Avatar({
+  initials,
+  color,
+  size = 56,
+}: {
+  initials: string;
+  color: string;
+  size?: number;
+}) {
   return (
     <div
       className="rounded-2xl grid place-items-center text-cream font-display tracking-tight shrink-0"
@@ -34,7 +42,8 @@ export function VendorCard({ vendor }: { vendor: Vendor }) {
           <div className="flex items-center gap-2 flex-wrap">
             <h3 className="font-display text-lg leading-tight truncate">{vendor.name}</h3>
             <span className="pill chip-teal">
-              <ShieldCheck className="size-3" />{verifiedLabel(vendor.verified)}
+              <ShieldCheck className="size-3" />
+              {verifiedLabel(vendor.verified)}
             </span>
           </div>
           <p className="text-sm text-muted-foreground truncate">{vendor.tagline}</p>
@@ -44,7 +53,8 @@ export function VendorCard({ vendor }: { vendor: Vendor }) {
               <b className="text-foreground">{vendor.rating}</b> ({vendor.reviewCount})
             </span>
             <span className="inline-flex items-center gap-1">
-              <MapPin className="size-3" />{vendor.area} · {vendor.distanceKm} km
+              <MapPin className="size-3" />
+              {vendor.area} · {vendor.distanceKm} km
             </span>
             <span className="inline-flex items-center gap-1">
               <Clock className="size-3" />~{vendor.responseMins} min reply
@@ -55,7 +65,9 @@ export function VendorCard({ vendor }: { vendor: Vendor }) {
 
       <div className="flex flex-wrap gap-1.5">
         {vendor.languages.slice(0, 3).map((l) => (
-          <span key={l} className="pill chip-outline">{l}</span>
+          <span key={l} className="pill chip-outline">
+            {l}
+          </span>
         ))}
         {vendor.availability === "today" && (
           <span className="pill chip-amber">Available today</span>
@@ -71,7 +83,10 @@ export function VendorCard({ vendor }: { vendor: Vendor }) {
           </div>
         </div>
         <div className="flex gap-2">
-          <span className="pill chip-outline gap-1"><MessageCircle className="size-3" />Message</span>
+          <span className="pill chip-outline gap-1">
+            <MessageCircle className="size-3" />
+            Message
+          </span>
           <span className="pill chip-ink">View · Book</span>
         </div>
       </div>

@@ -17,7 +17,14 @@ type HomeViewProps = {
   howItWorks: { n: number; title: string; body: string }[];
 };
 
-export function HomeView({ categories, communities, featuredVendors, stats, testimonials, howItWorks }: HomeViewProps) {
+export function HomeView({
+  categories,
+  communities,
+  featuredVendors,
+  stats,
+  testimonials,
+  howItWorks,
+}: HomeViewProps) {
   return (
     <>
       <HeroSection />

@@ -26,7 +26,9 @@ export function BookingSummary({ vendor: v, svc, slot, subtotal, fee, total }: P
         <Avatar initials={v.initials} color={v.color} size={48} />
         <div>
           <div className="font-semibold">{v.name}</div>
-          <div className="text-xs text-muted-foreground">{v.area} · ⭐ {v.rating}</div>
+          <div className="text-xs text-muted-foreground">
+            {v.area} · ⭐ {v.rating}
+          </div>
         </div>
       </div>
 
@@ -41,7 +43,8 @@ export function BookingSummary({ vendor: v, svc, slot, subtotal, fee, total }: P
         <Row k="Service" v={`€${subtotal}`} />
         <Row k="JaldiHelp fee (4%)" v={`€${fee}`} />
         <div className="flex justify-between pt-2 border-t border-border font-display text-xl">
-          <span>Total</span><span className="num-pill">€{total}</span>
+          <span>Total</span>
+          <span className="num-pill">€{total}</span>
         </div>
       </div>
 

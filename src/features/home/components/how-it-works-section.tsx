@@ -17,7 +17,9 @@ export function HowItWorksSection({ steps }: { steps: Step[] }) {
             <div key={s.n} className="border-t border-white/20 pt-5">
               <div className="font-display text-5xl num-pill opacity-60">0{s.n}</div>
               <div className="mt-2 font-display text-xl text-cream">{s.title}</div>
-              <p className="mt-2 text-sm" style={{ color: "rgba(230,251,248,.7)" }}>{s.body}</p>
+              <p className="mt-2 text-sm" style={{ color: "rgba(230,251,248,.7)" }}>
+                {s.body}
+              </p>
             </div>
           ))}
         </div>

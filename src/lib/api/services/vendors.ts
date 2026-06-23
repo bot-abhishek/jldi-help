@@ -8,7 +8,7 @@ export const vendorsApi = {
       return mock.vendors.filter(
         (v) =>
           (!query.category || v.category === query.category) &&
-          (!query.community || v.communities.includes(query.community ?? ""))
+          (!query.community || v.communities.includes(query.community ?? "")),
       );
     }
     const qs = new URLSearchParams(query as Record<string, string>).toString();

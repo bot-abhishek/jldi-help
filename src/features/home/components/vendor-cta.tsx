@@ -6,7 +6,9 @@ export function VendorCta() {
     <section className="container-x pb-24">
       <div
         className="card-soft p-10 md:p-14 grid md:grid-cols-2 gap-8 items-center"
-        style={{ background: "linear-gradient(135deg, var(--amber-soft) 0%, var(--teal-soft) 100%)" }}
+        style={{
+          background: "linear-gradient(135deg, var(--amber-soft) 0%, var(--teal-soft) 100%)",
+        }}
       >
         <div>
           <span className="pill chip-ink">For vendors</span>

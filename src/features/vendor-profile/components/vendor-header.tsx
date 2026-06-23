@@ -23,7 +23,9 @@ export function VendorHeader({ vendor: v }: { vendor: Vendor }) {
               {v.verified.replace(/_/g, " ").toLowerCase()}
             </span>
             {v.badges.map((b: string) => (
-              <span key={b} className="pill chip-outline">{b}</span>
+              <span key={b} className="pill chip-outline">
+                {b}
+              </span>
             ))}
           </div>
           <h1 className="font-display text-4xl md:text-5xl leading-tight">{v.name}</h1>
@@ -35,13 +37,16 @@ export function VendorHeader({ vendor: v }: { vendor: Vendor }) {
               <span className="text-muted-foreground">({v.reviewCount} reviews)</span>
             </span>
             <span className="inline-flex items-center gap-1 text-muted-foreground">
-              <MapPin className="size-3.5" />{v.area}, {v.city} · {v.distanceKm} km
+              <MapPin className="size-3.5" />
+              {v.area}, {v.city} · {v.distanceKm} km
             </span>
             <span className="inline-flex items-center gap-1 text-muted-foreground">
-              <Clock className="size-3.5" />Replies in ~{v.responseMins} min
+              <Clock className="size-3.5" />
+              Replies in ~{v.responseMins} min
             </span>
             <span className="inline-flex items-center gap-1 text-muted-foreground">
-              <Globe className="size-3.5" />{v.languages.join(", ")}
+              <Globe className="size-3.5" />
+              {v.languages.join(", ")}
             </span>
           </div>
         </div>

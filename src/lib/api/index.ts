@@ -7,7 +7,15 @@ export { vendorsApi } from "./services/vendors";
 export { bookingsApi } from "./services/bookings";
 export { authApi } from "./services/auth";
 
-export type { Vendor, Category, Community, BookingRequest, Booking, MagicLinkRequest, VendorQuery } from "./types";
+export type {
+  Vendor,
+  Category,
+  Community,
+  BookingRequest,
+  Booking,
+  MagicLinkRequest,
+  VendorQuery,
+} from "./types";
 
 // Convenience aggregate — use when you need multiple services in one import
 import { categoriesApi } from "./services/categories";

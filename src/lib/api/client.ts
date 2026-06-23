@@ -34,7 +34,7 @@ export class ApiError extends Error {
 // in server components for ISR, or { cache: "no-store" } for always-fresh data.
 export async function http<T>(
   path: string,
-  init?: RequestInit & { next?: { revalidate?: number | false; tags?: string[] } }
+  init?: RequestInit & { next?: { revalidate?: number | false; tags?: string[] } },
 ): Promise<T> {
   const res = await fetch(`${API_BASE_URL}${path}`, {
     ...init,

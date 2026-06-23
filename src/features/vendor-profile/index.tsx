@@ -17,8 +17,12 @@ export function VendorProfileView({ vendor: v, related }: VendorProfileViewProps
   return (
     <>
       <div className="container-x py-8">
-        <Link href="/browse" className="text-sm inline-flex items-center gap-1 text-muted-foreground hover:text-foreground">
-          <ArrowLeft className="size-3.5" />Back to results
+        <Link
+          href="/browse"
+          className="text-sm inline-flex items-center gap-1 text-muted-foreground hover:text-foreground"
+        >
+          <ArrowLeft className="size-3.5" />
+          Back to results
         </Link>
       </div>
 

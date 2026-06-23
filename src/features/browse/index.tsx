@@ -19,9 +19,8 @@ export function BrowseView({ vendors, categories, communities }: BrowseViewProps
         <div className="container-x py-8">
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <MapPin className="size-4 text-teal" />
-            Showing results near{" "}
-            <b className="text-foreground">Dublin 2 · D02 XY45</b> · 5 km radius{" "}
-            <button className="underline ml-2">Change</button>
+            Showing results near <b className="text-foreground">Dublin 2 · D02 XY45</b> · 5 km
+            radius <button className="underline ml-2">Change</button>
           </div>
           <h1 className="font-display text-4xl md:text-5xl mt-3">All local services near you</h1>
           <p className="text-muted-foreground mt-2">
@@ -29,9 +28,15 @@ export function BrowseView({ vendors, categories, communities }: BrowseViewProps
           </p>
 
           <div className="mt-6 flex gap-2 flex-wrap">
-            <Link href="/browse" className="pill chip-ink">All</Link>
+            <Link href="/browse" className="pill chip-ink">
+              All
+            </Link>
             {categories.map((c) => (
-              <Link key={c.slug} href={`/category/${c.slug}`} className="pill chip-outline hover:bg-secondary">
+              <Link
+                key={c.slug}
+                href={`/category/${c.slug}`}
+                className="pill chip-outline hover:bg-secondary"
+              >
                 {c.icon} {c.name}
               </Link>
             ))}

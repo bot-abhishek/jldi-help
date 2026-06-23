@@ -14,9 +14,12 @@ export function VendorServices({ vendor }: { vendor: Vendor }) {
             </div>
             <div className="flex items-center gap-4">
               <div className="font-display text-xl num-pill">
-                €{s.price}<span className="text-xs text-muted-foreground font-sans">{s.unit}</span>
+                €{s.price}
+                <span className="text-xs text-muted-foreground font-sans">{s.unit}</span>
               </div>
-              <Link href={`/book/${vendor.id}`} className="pill chip-ink">Book</Link>
+              <Link href={`/book/${vendor.id}`} className="pill chip-ink">
+                Book
+              </Link>
             </div>
           </div>
         ))}

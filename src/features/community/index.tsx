@@ -10,7 +10,12 @@ type CommunityViewProps = {
   otherCommunities: Community[];
 };
 
-export function CommunityView({ community: c, vendors, categories, otherCommunities }: CommunityViewProps) {
+export function CommunityView({
+  community: c,
+  vendors,
+  categories,
+  otherCommunities,
+}: CommunityViewProps) {
   const byCat = vendors.reduce<Record<string, Vendor[]>>((acc, v) => {
     (acc[v.category] ??= []).push(v);
     return acc;
@@ -20,14 +25,19 @@ export function CommunityView({ community: c, vendors, categories, otherCommunit
     <>
       <section className="ink-grad">
         <div className="container-x py-16">
-          <div className="flex items-center gap-2 text-sm" style={{ color: "rgba(230,251,248,.7)" }}>
-            <MapPin className="size-4" />Dublin · 5 km radius
+          <div
+            className="flex items-center gap-2 text-sm"
+            style={{ color: "rgba(230,251,248,.7)" }}
+          >
+            <MapPin className="size-4" />
+            Dublin · 5 km radius
           </div>
           <div className="mt-3 flex items-center gap-5">
             <div className="text-7xl">{c.flag}</div>
             <div>
               <span className="pill" style={{ background: "rgba(255,255,255,.15)", color: "#fff" }}>
-                <Globe2 className="size-3" />Community lens · Cross-category
+                <Globe2 className="size-3" />
+                Community lens · Cross-category
               </span>
               <h1 className="font-display text-5xl md:text-6xl text-cream mt-2">
                 Services for the {c.name} community
@@ -60,7 +70,9 @@ export function CommunityView({ community: c, vendors, categories, otherCommunit
                 )}
               </div>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-                {list.map((v) => <VendorCard key={v.id} vendor={v} />)}
+                {list.map((v) => (
+                  <VendorCard key={v.id} vendor={v} />
+                ))}
               </div>
             </div>
           );
@@ -70,7 +82,11 @@ export function CommunityView({ community: c, vendors, categories, otherCommunit
           <h3 className="font-display text-xl mb-3">Other communities</h3>
           <div className="flex flex-wrap gap-2">
             {otherCommunities.map((x) => (
-              <Link key={x.slug} href={`/community/${x.slug}`} className="pill chip-outline hover:bg-secondary">
+              <Link
+                key={x.slug}
+                href={`/community/${x.slug}`}
+                className="pill chip-outline hover:bg-secondary"
+              >
                 {x.flag} {x.name}
               </Link>
             ))}

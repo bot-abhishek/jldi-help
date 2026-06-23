@@ -28,7 +28,8 @@ export function BookingFlow({ vendor: v }: { vendor: Vendor }) {
           href={`/vendor/${v.id}`}
           className="text-sm inline-flex items-center gap-1 text-muted-foreground hover:text-foreground"
         >
-          <ArrowLeft className="size-3.5" />Back to {v.name}
+          <ArrowLeft className="size-3.5" />
+          Back to {v.name}
         </Link>
       </div>
 
@@ -56,13 +57,16 @@ export function BookingFlow({ vendor: v }: { vendor: Vendor }) {
           />
           <div className="mt-4 text-xs text-muted-foreground space-y-1.5 px-1">
             <div className="flex items-center gap-2">
-              <ShieldCheck className="size-3.5 text-teal" />Payment held in escrow
+              <ShieldCheck className="size-3.5 text-teal" />
+              Payment held in escrow
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="size-3.5 text-success" />Free cancellation up to 24h
+              <CheckCircle2 className="size-3.5 text-success" />
+              Free cancellation up to 24h
             </div>
             <div className="flex items-center gap-2">
-              <MessageCircle className="size-3.5" />Chat opens once accepted
+              <MessageCircle className="size-3.5" />
+              Chat opens once accepted
             </div>
           </div>
         </aside>

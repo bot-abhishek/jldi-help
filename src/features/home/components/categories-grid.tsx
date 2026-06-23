@@ -8,7 +8,9 @@ export function CategoriesGrid({ categories }: { categories: Category[] }) {
       <div className="flex items-end justify-between mb-8 flex-wrap gap-4">
         <div>
           <span className="pill chip-teal">Browse by category</span>
-          <h2 className="font-display text-4xl md:text-5xl mt-3">Ten ways to get something done.</h2>
+          <h2 className="font-display text-4xl md:text-5xl mt-3">
+            Ten ways to get something done.
+          </h2>
         </div>
         <Link
           href="/browse"
@@ -28,7 +30,9 @@ export function CategoriesGrid({ categories }: { categories: Category[] }) {
             <div className="text-3xl">{c.icon}</div>
             <div className="font-display text-lg leading-tight">{c.name}</div>
             <div className="text-xs text-muted-foreground line-clamp-2">{c.blurb}</div>
-            <div className="text-xs num-pill text-teal mt-auto pt-2">{c.count.toLocaleString()} vendors</div>
+            <div className="text-xs num-pill text-teal mt-auto pt-2">
+              {c.count.toLocaleString()} vendors
+            </div>
           </Link>
         ))}
       </div>

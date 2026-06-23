@@ -9,14 +9,16 @@ export function CommunitiesShowcase({ communities }: { communities: Community[] 
         <div className="grid lg:grid-cols-12 gap-10 items-start">
           <div className="lg:col-span-4">
             <span className="pill chip-amber">
-              <Globe2 className="size-3" />Browse by community
+              <Globe2 className="size-3" />
+              Browse by community
             </span>
             <h2 className="font-display text-4xl md:text-5xl mt-3">
               Services for your community, across every category.
             </h2>
             <p className="mt-4 text-muted-foreground">
-              A Polish-speaking plumber, a Polish delicatessen caterer, a Polish-speaking hairdresser
-              — surfaced together. The category-blind discovery layer no other marketplace has.
+              A Polish-speaking plumber, a Polish delicatessen caterer, a Polish-speaking
+              hairdresser — surfaced together. The category-blind discovery layer no other
+              marketplace has.
             </p>
             <Link
               href="/communities"

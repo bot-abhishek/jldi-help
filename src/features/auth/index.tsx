@@ -8,7 +8,9 @@ export function AuthView() {
     <section className="container-x py-16 grid lg:grid-cols-2 gap-12 items-center">
       <div className="hidden lg:block">
         <h1 className="font-display text-6xl leading-[0.95]">
-          Welcome back.<br /><span className="text-teal">Let&apos;s get it sorted.</span>
+          Welcome back.
+          <br />
+          <span className="text-teal">Let&apos;s get it sorted.</span>
         </h1>
         <p className="mt-5 text-lg text-muted-foreground max-w-md">
           One account for booking, messaging, payments and reviews. Switch to vendor mode anytime.
@@ -17,19 +19,25 @@ export function AuthView() {
 
       <div className="card-soft p-8 max-w-md w-full mx-auto">
         <h2 className="font-display text-3xl">Sign in or sign up</h2>
-        <p className="text-sm text-muted-foreground mt-1">No password needed — we&apos;ll send you a magic link.</p>
+        <p className="text-sm text-muted-foreground mt-1">
+          No password needed — we&apos;ll send you a magic link.
+        </p>
 
         <div className="mt-6 space-y-3">
           <button className="w-full px-4 py-3 rounded-xl border border-border font-semibold text-sm inline-flex items-center justify-center gap-2 hover:bg-secondary">
-            <Chrome className="size-4" />Continue with Google
+            <Chrome className="size-4" />
+            Continue with Google
           </button>
           <button className="w-full px-4 py-3 rounded-xl border border-border font-semibold text-sm inline-flex items-center justify-center gap-2 hover:bg-secondary">
-            <Apple className="size-4" />Continue with Apple
+            <Apple className="size-4" />
+            Continue with Apple
           </button>
         </div>
 
         <div className="my-5 flex items-center gap-3 text-xs text-muted-foreground">
-          <div className="flex-1 h-px bg-border" />OR<div className="flex-1 h-px bg-border" />
+          <div className="flex-1 h-px bg-border" />
+          OR
+          <div className="flex-1 h-px bg-border" />
         </div>
 
         <div className="space-y-3">
@@ -56,7 +64,10 @@ export function AuthView() {
 
         <div className="mt-6 text-xs text-muted-foreground text-center">
           Are you a service provider?{" "}
-          <Link href="/for-vendors" className="font-semibold text-foreground underline-offset-4 hover:underline">
+          <Link
+            href="/for-vendors"
+            className="font-semibold text-foreground underline-offset-4 hover:underline"
+          >
             List your service →
           </Link>
         </div>

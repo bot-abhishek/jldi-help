@@ -26,9 +26,7 @@ export default async function VendorPage({ params }: Props) {
   const vendor = findVendor(id);
   if (!vendor) notFound();
 
-  const related = vendors
-    .filter((v) => v.id !== id && v.category === vendor.category)
-    .slice(0, 3);
+  const related = vendors.filter((v) => v.id !== id && v.category === vendor.category).slice(0, 3);
 
   return (
     <PageLayout>

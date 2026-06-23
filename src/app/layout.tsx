@@ -18,10 +18,12 @@ const plusJakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   title: "JaldiHelp — Local services, sorted.",
-  description: "Ireland's location-first marketplace for trusted local services — from a leaking tap to a wedding priest.",
+  description:
+    "Ireland's location-first marketplace for trusted local services — from a leaking tap to a wedding priest.",
   openGraph: {
     title: "JaldiHelp — Local services, sorted.",
-    description: "Ireland's location-first marketplace for trusted local services — from a leaking tap to a wedding priest.",
+    description:
+      "Ireland's location-first marketplace for trusted local services — from a leaking tap to a wedding priest.",
     type: "website",
   },
   twitter: { card: "summary_large_image" },

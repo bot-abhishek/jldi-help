@@ -4,7 +4,8 @@ import { ForVendorsView } from "@/features/for-vendors";
 
 export const metadata: Metadata = {
   title: "List your service on JaldiHelp",
-  description: "Get found by every customer near you. Free to list, 18% commission only on completed jobs.",
+  description:
+    "Get found by every customer near you. Free to list, 18% commission only on completed jobs.",
 };
 
 export default function ForVendorsPage() {

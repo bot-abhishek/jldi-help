@@ -4,7 +4,8 @@ import { AboutView } from "@/features/about";
 
 export const metadata: Metadata = {
   title: "About JaldiHelp",
-  description: "JaldiHelp is building the trusted, location-precise local services infrastructure that's never existed.",
+  description:
+    "JaldiHelp is building the trusted, location-precise local services infrastructure that's never existed.",
 };
 
 export default function AboutPage() {

@@ -14,7 +14,9 @@ export function VendorDashboardView({ vendor: v }: { vendor: Vendor }) {
         <div className="flex items-center gap-4">
           <Avatar initials={v.initials} color={v.color} size={64} />
           <div>
-            <div className="text-xs text-muted-foreground uppercase tracking-wider">Vendor dashboard</div>
+            <div className="text-xs text-muted-foreground uppercase tracking-wider">
+              Vendor dashboard
+            </div>
             <h1 className="font-display text-3xl">Welcome back, {v.name.split(" ")[0]}</h1>
             <div className="text-sm text-muted-foreground">
               Your listing is live · Dublin 6 · {v.subcategory}
@@ -23,7 +25,8 @@ export function VendorDashboardView({ vendor: v }: { vendor: Vendor }) {
         </div>
         <div className="flex gap-2">
           <Link href={`/vendor/${v.id}`} className="pill chip-outline gap-1.5">
-            <Eye className="size-3.5" />View public profile
+            <Eye className="size-3.5" />
+            View public profile
           </Link>
           <button className="pill chip-ink">+ Add service</button>
         </div>

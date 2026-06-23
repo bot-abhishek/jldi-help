@@ -16,7 +16,8 @@ export function VendorVerification() {
       <div className="grid sm:grid-cols-2 gap-3">
         {CHECKS.map((x) => (
           <div key={x} className="flex items-center gap-2 text-sm">
-            <CheckCircle2 className="size-4 text-success" />{x}
+            <CheckCircle2 className="size-4 text-success" />
+            {x}
           </div>
         ))}
       </div>
