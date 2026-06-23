@@ -48,7 +48,7 @@ export function Footer() {
   return (
     <footer className="mt-24 border-t border-border bg-sand/60">
       <div className="container-x py-14 grid md:grid-cols-5 gap-10">
-        <div class="md:col-span-2">
+        <div className="md:col-span-2">
           <div className="flex items-center gap-2"><span className="inline-grid place-items-center size-9 rounded-xl bg-ink text-cream font-display text-sm font-bold leading-none tracking-tight">JH</span>
             <span className="font-display text-xl">jaldihelp<span className="text-teal">.</span></span>
           </div>
