@@ -105,7 +105,7 @@ function Dashboard() {
           <p className="text-sm text-muted-foreground mb-5">Profile views, bookings and earnings — at a glance.</p>
           <div className="h-48 grid grid-cols-30 items-end gap-1" style={{gridTemplateColumns:"repeat(30,1fr)"}}>
             {Array.from({length:30}).map((_,i)=> {
-              const h = 20 + Math.sin(i/2)*30 + Math.random()*40;
+              const h = 30 + Math.sin(i/2)*25 + Math.cos(i/3.1)*20 + (i*7%30);
               return <div key={i} className="rounded-t-md bg-teal/80" style={{height:`${h}%`}}/>;
             })}
           </div>
