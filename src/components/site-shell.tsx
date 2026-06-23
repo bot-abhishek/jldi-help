@@ -9,7 +9,7 @@ export function Header() {
     <header className="sticky top-0 z-40 bg-background/85 backdrop-blur border-b border-border">
       <div className="container-x flex items-center gap-6 h-16">
         <Link to="/" className="flex items-center gap-2 group">
-          <span className="inline-grid place-items-center size-9 rounded-xl bg-ink text-cream font-display text-lg leading-none">s.</span>
+          <span className="inline-grid place-items-center size-9 rounded-xl bg-ink text-cream font-display text-sm font-bold leading-none tracking-tight">JH</span>
           <span className="font-display text-xl tracking-tight">jaldihelp<span className="text-teal">.</span></span>
         </Link>
 
@@ -48,8 +48,8 @@ export function Footer() {
   return (
     <footer className="mt-24 border-t border-border bg-sand/60">
       <div className="container-x py-14 grid md:grid-cols-5 gap-10">
-        <div className="md:col-span-2">
-          <div className="flex items-center gap-2"><span className="inline-grid place-items-center size-9 rounded-xl bg-ink text-cream font-display text-lg leading-none">s.</span>
+        <div class="md:col-span-2">
+          <div className="flex items-center gap-2"><span className="inline-grid place-items-center size-9 rounded-xl bg-ink text-cream font-display text-sm font-bold leading-none tracking-tight">JH</span>
             <span className="font-display text-xl">jaldihelp<span className="text-teal">.</span></span>
           </div>
           <p className="mt-3 text-sm text-muted-foreground max-w-sm">A location-first marketplace for every local service a household needs — built for Ireland, designed to travel.</p>
