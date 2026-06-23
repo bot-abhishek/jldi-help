@@ -77,9 +77,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Sorted — Local services, sorted." },
+      { title: "JaldiHelp — Local services, sorted." },
       { name: "description", content: "Ireland's location-first marketplace for trusted local services — from a leaking tap to a wedding priest." },
-      { property: "og:title", content: "Sorted — Local services, sorted." },
+      { property: "og:title", content: "JaldiHelp — Local services, sorted." },
       { property: "og:description", content: "Ireland's location-first marketplace for trusted local services — from a leaking tap to a wedding priest." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

@@ -5,7 +5,7 @@ import { categories, vendors, communities } from "@/lib/mock-data";
 import { SlidersHorizontal, MapPin, ChevronDown } from "lucide-react";
 
 export const Route = createFileRoute("/browse")({
-  head: () => ({ meta: [{ title: "Browse local services — Sorted" }, { name: "description", content: "Filter trusted local vendors by category, availability, price, language and community." }] }),
+  head: () => ({ meta: [{ title: "Browse local services — JaldiHelp" }, { name: "description", content: "Filter trusted local vendors by category, availability, price, language and community." }] }),
   component: Browse,
 });
 

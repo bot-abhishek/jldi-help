@@ -5,7 +5,7 @@ import { vendors } from "@/lib/mock-data";
 import { Calendar, TrendingUp, Star, MessageCircle, CheckCircle2, Clock, Euro, Eye } from "lucide-react";
 
 export const Route = createFileRoute("/vendor-dashboard")({
-  head: () => ({ meta: [{ title: "Vendor dashboard preview — Sorted" }] }),
+  head: () => ({ meta: [{ title: "Vendor dashboard preview — JaldiHelp" }] }),
   component: Dashboard,
 });
 

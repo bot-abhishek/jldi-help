@@ -12,7 +12,7 @@ export const Route = createFileRoute("/community/$slug")({
   },
   head: ({ loaderData }) => ({
     meta: [
-      { title: `Services for the ${loaderData?.community.name} community in Dublin — Sorted` },
+      { title: `Services for the ${loaderData?.community.name} community in Dublin — JaldiHelp` },
       { name: "description", content: `Find ${loaderData?.community.name} community vendors across every category in Dublin.` },
     ],
   }),

@@ -7,7 +7,7 @@ import { MapPin, Search, ShieldCheck, Sparkles, ArrowRight, Star, Clock, Zap, Gl
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Sorted — Local services in Ireland, sorted in minutes" },
+      { title: "JaldiHelp — Local services in Ireland, sorted in minutes" },
       { name: "description", content: "From a leaking tap to a wedding priest — find a verified local pro nearby and book in under a minute." },
     ],
   }),

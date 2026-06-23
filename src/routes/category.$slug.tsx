@@ -12,7 +12,7 @@ export const Route = createFileRoute("/category/$slug")({
   },
   head: ({ loaderData }) => ({
     meta: [
-      { title: `${loaderData?.cat.name ?? "Category"} near you — Sorted` },
+      { title: `${loaderData?.cat.name ?? "Category"} near you — JaldiHelp` },
       { name: "description", content: loaderData?.cat.blurb ?? "Local services" },
     ],
   }),

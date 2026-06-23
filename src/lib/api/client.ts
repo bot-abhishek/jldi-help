@@ -1,5 +1,5 @@
 // =============================================================================
-// Sorted API Client — modular layer
+// JaldiHelp API Client — modular layer
 // -----------------------------------------------------------------------------
 // Today: returns mock data from `@/lib/mock-data` so the UI is fully clickable.
 // Tomorrow: flip `USE_MOCKS` to false (or set VITE_API_BASE_URL) and every call

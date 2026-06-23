@@ -3,7 +3,7 @@ import { PageLayout } from "@/components/site-shell";
 import { Mail, Phone, Apple, Chrome } from "lucide-react";
 
 export const Route = createFileRoute("/auth")({
-  head: () => ({ meta: [{ title: "Sign in — Sorted" }] }),
+  head: () => ({ meta: [{ title: "Sign in — JaldiHelp" }] }),
   component: () => (
     <PageLayout>
       <section className="container-x py-16 grid lg:grid-cols-2 gap-12 items-center">
